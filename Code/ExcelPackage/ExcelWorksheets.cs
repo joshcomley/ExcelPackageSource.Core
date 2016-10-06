@@ -31,18 +31,18 @@
  * John Tunnicliffe		Initial Release		01-Jan-2007
  * ******************************************************************************
  */
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
-using System.Xml;
 using System.IO;
 using System.IO.Packaging;
 using System.Linq;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
 	/// <summary>
 	/// Provides enumeration through all the worksheets in the workbook
@@ -260,7 +260,7 @@ namespace OfficeOpenXml
 			var sheetsNode = _xlPackage.Workbook.WorkbookXml.XPathSelectElement("//d:workbook/d:sheets", _nsManager);
 			if (sheetsNode != null)
 			{
-				var sheetNode = sheetsNode.XPathSelectElement(string.Format("./d:sheet[@sheetId={0}]", worksheet.SheetID), _nsManager);
+				var sheetNode = sheetsNode.XPathSelectElement($"./d:sheet[@sheetId={worksheet.SheetID}]", _nsManager);
 				sheetNode?.Remove();
 			}
 

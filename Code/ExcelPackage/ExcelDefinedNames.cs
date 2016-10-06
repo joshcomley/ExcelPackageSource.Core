@@ -3,7 +3,7 @@ using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
     public class ExcelDefinedNames
     {

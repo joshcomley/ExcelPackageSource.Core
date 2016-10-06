@@ -1,6 +1,6 @@
 using System.Xml.Linq;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
     public class ElementFactory
     {

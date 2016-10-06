@@ -31,13 +31,13 @@
  * John Tunnicliffe		Initial Release		01-Jan-2007
  * ******************************************************************************
  */
+
 using System;
-using System.Xml;
 using System.IO;
 using System.IO.Packaging;
 using System.Xml.Linq;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
 	/// <summary>
 	/// Represents an Excel 2007 XLSX file package.  Opens the file and provides access

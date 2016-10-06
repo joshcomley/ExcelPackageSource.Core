@@ -31,11 +31,11 @@
  * John Tunnicliffe		Initial Release		01-Jan-2007
  * ******************************************************************************
  */
+
 using System;
-using System.Xml;
 using System.Xml.Linq;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
 	#region class ExcelHeaderFooterText
 	/// <summary>

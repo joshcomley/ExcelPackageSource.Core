@@ -1,6 +1,6 @@
 using System.Xml.Linq;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
     internal static class ExtensonMethods
 	{

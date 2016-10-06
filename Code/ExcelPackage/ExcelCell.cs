@@ -31,15 +31,14 @@
  * John Tunnicliffe		Initial Release		01-Jan-2007
  * ******************************************************************************
  */
+
 using System;
-using System.Xml;
-using System.Text.RegularExpressions;
 using System.IO.Packaging;
-using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
 	/// <summary>
 	/// ExcelCell represents an individual worksheet cell.

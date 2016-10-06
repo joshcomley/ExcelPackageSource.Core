@@ -31,13 +31,13 @@
  * John Tunnicliffe		Initial Release		01-Jan-2007
  * ******************************************************************************
  */
+
 using System;
-using System.Xml;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
 	/// <summary>
 	/// Represents an individual row in the spreadsheet.
@@ -62,7 +62,7 @@ namespace OfficeOpenXml
 			_xlWorksheet = worksheet;
 
 			//  Search for the existing row
-			_rowElement = (XElement)worksheet.WorksheetXml.XPathSelectElement(string.Format("//d:sheetData/d:row[@r='{0}']", row), _xlWorksheet.NameSpaceManager);
+			_rowElement = (XElement)worksheet.WorksheetXml.XPathSelectElement($"//d:sheetData/d:row[@r='{row}']", _xlWorksheet.NameSpaceManager);
 			if (_rowElement == null)
 			{
 				// We didn't find the row, so add a new row element.

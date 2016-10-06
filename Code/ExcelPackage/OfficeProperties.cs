@@ -31,15 +31,15 @@
  * John Tunnicliffe		Initial Release		01-Jan-2007
  * ******************************************************************************
  */
+
 using System;
-using System.Xml;
 using System.IO;
 using System.IO.Packaging;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using ExcelExtensions = OfficeOpenXml.ExcelExtensions;
 
-namespace OfficeOpenXml
+namespace OfficeOpenXml.Core.ExcelPackage
 {
 	/// <summary>
 	/// Provides access to the properties bag of any office document (i.e. Word, Excel etc.)
