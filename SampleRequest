@@ -1,0 +1,14 @@
+Josh, I would have sent you an EMail but I could not find you EMail address.
+I have tried to contact you through dr.john.tunnicliffe@btinternet.com
+
+I have seen ExcelPackageSamples on the CodePlex site
+Is it possible you could add a copy of these to your source and get them to work ?
+I have tried to do this but they keep throwing a stackOverflow
+
+I have been using the CodePlex ExcelPackage and it appears your source is more up to date.
+The CodePlex ExcelPackage does not support apostrophes in cells e.g. Product's 
+
+I am new to Git, for my sins a CSV user, I apologise if I have committed this request in the wrong place
+
+Regards - Steve Eggo
+Steve.Eggo@NTLWorld.Com
